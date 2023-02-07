@@ -1,0 +1,28 @@
+# create a background image using a TextureRect node
+background_image = TextureRect.new()
+background_image.texture = load("background.png")
+background_image.size = Vector2(1280, 720)
+
+# create a label for the stream title
+title_label = Label.new()
+title_label.text = "My Stream Title"
+title_label.position = Vector2(10, 10)
+title_label.font = "Arial"
+title_label.font_size = 24
+
+# create a label for the current game
+game_label = Label.new()
+game_label.text = "Current Game: My Game"
+game_label.position = Vector2(10, 40)
+game_label.font = "Arial"
+game_label.font_size = 18
+
+# create a webcam display using a TextureRect node
+webcam_display = TextureRect.new()
+webcam_display.texture = load("webcam.png")
+webcam_display.size = Vector2(320, 240)
+webcam_display.position = Vector2(10, 70)
+
+# create a label for the chat
+chat_label = Label.new()
+chat_label.text = "Chat Messages:\n\
